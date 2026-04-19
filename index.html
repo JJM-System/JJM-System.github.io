@@ -167,11 +167,15 @@
             height: 88px;
             border-radius: 20px;
             flex-shrink: 0;
-            background: var(--pink-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.4rem;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .app-info h3 {
@@ -310,7 +314,7 @@
     <h2 class="section-title">What we build</h2>
 
     <div class="app-card">
-        <div class="app-icon">🤰</div>
+        <div class="app-icon"><img src="ic_launcher.png" alt="Pregnancy Test" /></div>
         <div class="app-info">
             <h3>Pregnancy Test</h3>
             <p>A symptom-based quiz app helping women assess the likelihood of early pregnancy. Available in 7 languages with a clean, intuitive interface.</p>
